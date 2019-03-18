@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1 id="title">New york Sports</h1>
-    <p id="description">this random survey</p>
+    <p id="description">tell us what sports are you into</p>
     <form id="survey-form">
       <div>
         <label for="name" id="name-label">name</label>
@@ -37,10 +37,30 @@
         <option value="basketball">Basketball</option>
         <option value="ruhby">Rugby</option>
         <option value="cricket">Cricket</option>
+        <option value="tnf">Track and Field</option>
       </select>
-      <div>
-        <label for="bu">let's go</label>
-        <input type="radio" name="yolo" value="s" />
+      <label for="race"><h3>what's your racial background</h3></label>
+      <div id="race">
+        <div>
+          <label for="asian">Asian</label>
+          <input type="radio" id="asian" value="asian" name="Asian" />
+        </div>
+        <div>
+          <label for="black">Black/African-American</label>
+          <input type="radio" id="black" value="black" name="black"/>
+        </div>
+        <div>
+          <label for="hsl">Hispanic / Latino</label>
+          <input type="radio" id="hsl" value="hsl" name="hsl"/>
+        </div>
+        <div>
+          <label for="native">Native American</label>
+          <input type="radio" id="native" value="native" name="native"/>
+        </div>
+        <div>
+          <label for="other">Other</label>
+          <input type="radio" id="other" value="other" name = "other"/>
+        </div>
       </div>
 
       <label for="favteam"><h3>Which Teams do yo follow</h3></label>
@@ -88,6 +108,11 @@
       </div>
 
       <button id="submit">Submit</button>
+      <textarea
+        type="comments"
+        placeholder="any other sports team you can enter here"
+      >
+      </textarea>
     </form>
   </body>
 </html>
